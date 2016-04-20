@@ -9,6 +9,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
+/**
+ * 
+ * @author Brian Carroll
+ * @Date 20-04-2016
+ * @gitHub 
+ */
 public class Main {
 
 	public static void main(String[] args) throws IOException
@@ -47,7 +53,7 @@ public class Main {
 		generateString(node, map, "");
 		return map;
 	}
-	
+
 	/**
 	 * First checks if it s the last node on the tree. Then it will recursively call until
 	 * the last node is reacted. 
@@ -64,13 +70,10 @@ public class Main {
 		}
 		generateString(node.left , map1, src + '0');
 		generateString(node.right, map1, src + '1');
-
-
-		System.out.println(map1);
 	}
 
 	/**
-	 * This will put the nodes into a priority queue. this willhelp for when we are building our tree. 
+	 * This will put the nodes into a priority queue. this will help for when we are building our tree. 
 	 * @param pq
 	 * @param scr
 	 */
